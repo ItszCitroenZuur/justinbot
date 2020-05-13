@@ -1,6 +1,11 @@
 const discord = require("discord.js");
 
 module.exports.run = async (bot, message, arguments) => {
+    
+        var logChannel = message.guild.channels.find('id', '710068736308281354');
+
+
+        var reason = arguments.join(" ").slice(22);
 
     const catergoryID = "709735300460576789";
 
@@ -26,6 +31,16 @@ module.exports.run = async (bot, message, arguments) => {
 
     message.channel.send(ticketCommando);
     }
+    
+    var logEmbed = new discord.RichEmbed()
+    .setTitle("Ticket")
+    .setDescription("Ticket gesloten")
+    .addField("----", "**Gesloten door: **" + message.author.username + "\n **Reden: **" + reason)
+    .setFooter("©Copyright claimed by Koekiemonsterbot#9276! Do not disturb!");
+    
+    logChannel.send(logEmbed);
+    
+
 
 }
 
