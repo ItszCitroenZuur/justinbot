@@ -53,6 +53,7 @@ module.exports.run = async (bot, message, arguments) => {
     message.channel.send(ban);
 
     banUser.send(ban);
+    banUser.send("https://tenor.com/view/thor-banned-ban-hammer-thor-hammer-thor-chris-hemsworth-gif-11035060");
 
     return;
 }
