@@ -34,6 +34,7 @@ module.exports.run = async (bot, message, arguments) => {
     
     var logEmbed = new discord.RichEmbed()
     .setTitle("Ticket")
+    .setColor("#29ff54")
     .setDescription("Ticket gesloten")
     .addField("----", "**Gesloten door: **" + message.author.username + "\n **Reden: **" + reason)
     .setFooter("©Copyright claimed by Koekiemonsterbot#9276! Do not disturb!");
