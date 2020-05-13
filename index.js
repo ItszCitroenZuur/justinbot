@@ -32,7 +32,7 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.login(process.env.token);
 const activities_list = [
-    "play.wartopia.net",
+    "play.wartopia.nl",
     "NICKERD",
     "JUSTIN",
     "RICKERD"
