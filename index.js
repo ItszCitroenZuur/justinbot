@@ -69,3 +69,7 @@ bot.on("message", async message => {
     }
 
 });
+
+bot.on('guildMemberAdd', member => {
+    member.guild.channels.get('709689450732453919').send(`Welkom ${user}!`); 
+});
