@@ -51,7 +51,7 @@ bot.on("message", async message => {
 
     if (message.channel.type === "dm") return;
 
-    if (message.channel.name == '📟bot-commands'){
+    if (message.channel.name == '📟bot-commands' || message.channel.parentID == '709735300460576789'){
 
         var prefix = botConfig.prefix;
 
