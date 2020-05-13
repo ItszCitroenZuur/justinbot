@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, arguments) => {
 
     var helpEmbed = new discord.RichEmbed()
         .setTitle("Help!")
-        .setColor("#FF0000")
+    .setColor("#29ff54")
         .setThumbnail(message.author.displayAvatarURL)
         .addField("-------", "**Prefix: ** !")
         .addField("Leden: ", "**-bug ** Geeft je bug door \n  \n **-help** Laat dit bericht zien \n **-idee** Geeft je idee door \n **-info** Geeft info over de bot \n **-leden** Laat zien hoeveel leden er op de server zitten \n **-ping** Pong!  \n **-serverinfo** Geeft info over de server \n **-new** Maakt een ticket aan")
